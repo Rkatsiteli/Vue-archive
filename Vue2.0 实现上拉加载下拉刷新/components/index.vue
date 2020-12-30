@@ -1,4 +1,6 @@
 <template lang="html">
+
+
 	<div class="yo-scroll" :class="{'down':(state===0),'up':(state==1),refresh:(state===2),touch:touching}" @touchstart="touchStart($event)" @touchmove="touchMove($event)" @touchend="touchEnd($event)">
 		<section class="inner" :style="{ transform: 'translate3d(0, ' + top + 'px, 0)' }">
 			<header class="pull-refresh">
